@@ -6,19 +6,51 @@
         <!-- <script src="script.js"></script> -->
     </head>
   <body>
+
+    <!-- We can also import fonts from different websites-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">"
     <style>
+      #heading {
+        color: green;
+      }
+      #cat-photo-form {
+        background-color: green;
+      }
+      .silver-background {
+        background-color: silver;
+      }
+      .thick-green-border {
+          border-color: green;
+          border-width: 10px;
+          border-style: solid;
+          border-radius: 50%;
+      }
+      .larger-image {
+        width: 500px;
+      }
+      .smaller-image {
+        width: 100px;
+      }
+      .blue-text { color: blue; }
+      .red-text { color: red; }
+      p { font-size: 16px;
+          font-family: Helvetica, monospace; }
+      h2 {
+          font-family: Lobster, monospace;
+        }
     </style>
-    <h2>CatPhotoApp</h2>
+
+    <h2 class="red-text" id="heading">CatPhotoApp</h2>
     <br>
       <!-- TODO: Add link to cat photos -->
-      <p>Click here to see more <a href="#" target="_blank">cat photos</a>.</p>
+      <p class="red-text">Click here to see more <a href="#" target="_blank">cat photos</a>.</p>
       <a href="#">
-        <img
+        <img class="smaller-image thick-green-border"
           src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
           alt="A cute orange cat lying on its back"/>
         </a>
       <h3>Cat Lists</h3>
-      <div class="Lists">
+      <div class="Lists silver-background">
         <p>Things cats <em>love</em>:</p>
         <ul>
             <li>cat nip</li>
@@ -31,10 +63,10 @@
             <li>flea treatment</li>
             <li>thunder</li>
             <li>other cats</li>
-        </ol>
             <img src="cats.jpg" alt="Cats" />
+        </ol>
       </div>
-      <form action="/submit-cat-photo" method="post">
+      <form id="cat-photo-form" action="/submit-cat-photo" method="post">
         <label for="indoor"><input id="indoor" type="radio" name="i-o" checked>indoor</input></label>
         <label for="outdoor"><input id="outdoor" type="radio" name="i-o">outdoor</label></br>
 
