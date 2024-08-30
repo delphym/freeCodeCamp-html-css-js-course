@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <style>
+    /* global variable declaration */
+    :root {
+      --penguin-belly: pink;
+    }
+    body {
+      background: var(--penguin-belly, #c6faf1);
+    }
     .penguin {
       /* change code below */
       /* these are CSS variables `--var-name` */
       --penguin-skin: gray;
-      --penguin-belly: silver;
+      /* --penguin-belly: silver; */
       --penguin-beak: orange;
       /* change code above */
 
@@ -20,7 +27,7 @@
     .penguin-top {
       top: 10%;
       left: 25%;
-      background: var(--pengun-skin, black); /* use of the fallback values */
+      background: var(--penguin-skin, black); /* use of the fallback values */
       width: 50%;
       height: 45%;
       border-radius: 70% 70% 60% 60%;
@@ -167,10 +174,6 @@
       width: 16%;
       height: 10%;
       border-radius: 50%;
-    }
-
-    body {
-      background: #c6faf1;
     }
 
     .penguin * {
