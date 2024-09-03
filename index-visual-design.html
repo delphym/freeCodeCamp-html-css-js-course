@@ -5,13 +5,22 @@
     <style>
       h4 {
         text-align: center;
-        height: 25px;
+        background-color: rgba(45, 45, 45, 0.1);
+        padding: 10px;
+        font-size: 27px;
+        text-transform: uppercase;
       }
       p {
         text-align: justify;
       }
+      #thumbnail {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
       .links {
         margin-right: 20px;
+        color: black;
+        opacity: 0.7;
       }
       .fullCard {
         width: 245px;
@@ -29,10 +38,12 @@
     <div class="fullCard">
       <div class="cardContent">
         <div class="cardText">
-          <h4>Google</h4>
+          <h4 id="thumbnail"><s>Google</s>Alphabet</h4>
           <p>
-            Google was founded by Larry Page and Sergey Brin while they were
-            Ph.D. students at <strong>Stanford University</strong>.
+            <em>
+              Google was founded by Larry Page and Sergey Brin while they were
+              <u>Ph.D. students</u> at <strong>Stanford University</strong>.
+            </em>
           </p>
         </div>
         <div class="cardLinks">
@@ -51,5 +62,37 @@
         </div>
       </div>
     </div>
+    <style>
+      h1 {
+        font-size: 68px;
+      }
+      h2 {
+        font-size: 52px;
+      }
+      h3 {
+        font-size: 40px;
+      }
+      h5 {
+        font-size: 21px;
+      }
+      h6 {
+        font-size: 14px;
+      }
+      h4 {
+        text-align: inherit;
+        background-color: inherit;
+        padding: 0;
+        font-size: 32px;
+        text-transform: inherit;
+        color: #000;
+        font-size: 20px;
+      }
+    </style>
+    <h1>This is h1 text</h1>
+    <h2>This is h2 text</h2>
+    <h3>This is h3 text</h3>
+    <h4>This is newly styled H4 text</h4>
+    <h5>This is h5 text</h5>
+    <h6>This is h6 text</h6>
   </body>
 </html>
