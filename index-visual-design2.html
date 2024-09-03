@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Applied Visual Design #2</title>
+  </head>
+  <style>
+    h2 {
+      position: relative;
+      left: 15px;
+      bottom: 10px;
+    }
+    p {
+      position: relative;
+      /* bottom: 10px; */
+    }
+
+    #searchbar {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+    }
+    section {
+      position: relative;
+    }
+
+    body {
+      min-height: 150vh;
+    }
+    #navbar {
+      position: fixed;
+      width: 100%;
+      background-color: #767676;
+      top: 0px;
+      left: 0px;
+    }
+    nav ul {
+      margin: 0px;
+      padding: 5px 0px 5px 30px;
+    }
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1>Welcome!</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <h1>On Being Well-Positioned</h1>
+      <h2>Move me!</h2>
+      <p>I still think the h2 is where it normally sits.</p>
+    </div>
+
+    <div>
+      <h1>Welcome 2!</h1>
+      <section>
+        <form id="searchbar">
+          <label for="search">Search:</label>
+          <input type="search" id="search" name="search" />
+          <input type="submit" name="submit" value="Go!" />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
