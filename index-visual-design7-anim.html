@@ -25,24 +25,36 @@
     animation-name: rainbow;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(0.25, 0, 0.75, 1);
   }
   @keyframes rainbow {
     0% {
       background-color: blue;
       transform: translate(0, 0);
     }
+    12.5% {
+      transform: translate(17.68px, 17.68px);
+    }
     25% {
       background-color: red;
       transform: translate(25px, 25px);
+    }
+    37.5% {
+      transform: translate(17.68px, 32.32px);
     }
     50% {
       background-color: green;
       transform: translate(0, 50px);
     }
+    62.5% {
+      transform: translate(-17.68px, 32.32px);
+    }
     75% {
       background-color: orange;
       transform: translate(-25px, 25px);
+    }
+    87.5% {
+      transform: translate(-17.68px, 17.68px);
     }
     100% {
       background-color: yellow;
