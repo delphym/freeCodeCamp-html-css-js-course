@@ -1,95 +1,111 @@
-<style>
-  div {
-    height: 40px;
-    width: 70%;
-    background: black;
-    margin: 50px auto;
-    border-radius: 5px;
-    position: relative;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Animation</title>
+    <style>
+      div {
+        height: 40px;
+        width: 70%;
+        background: black;
+        margin: 50px auto;
+        border-radius: 5px;
+        position: relative;
+      }
 
-  #rect {
-    transition: transform 4s linear;
-    animation: color-change 4s linear infinite;
-  }
+      #rect {
+        transition: transform 4s linear;
+        animation: color-change 4s linear infinite;
+      }
 
-  #rect.move {
-    transform: translate(25px, 25px) rotate(360deg);
-  }
+      #rect.move {
+        transform: translate(25px, 25px) rotate(360deg);
+      }
 
-  @keyframes color-change {
-    0% { background-color: blue; }
-    25% { background-color: red; }
-    50% { background-color: green; }
-    75% { background-color: orange; }
-    100% { background-color: yellow; }
-  }
+      @keyframes color-change {
+        0% {
+          background-color: blue;
+        }
+        25% {
+          background-color: red;
+        }
+        50% {
+          background-color: green;
+        }
+        75% {
+          background-color: orange;
+        }
+        100% {
+          background-color: yellow;
+        }
+      }
 
-  #anim {
-    animation-name: colorful;
-    animation-duration: 3s;
-  }
-  @keyframes colorful {
-    0% {
-      background-color: blue;
-    }
-    100% {
-      background-color: yellow;
-    }
-  }
+      #anim {
+        animation-name: colorful;
+        animation-duration: 3s;
+      }
+      @keyframes colorful {
+        0% {
+          background-color: blue;
+        }
+        100% {
+          background-color: yellow;
+        }
+      }
 
-  button {
-    border-radius: 5px;
-    color: white;
-    background-color: #0f5897;
-    padding: 5px 10px 8px 10px;
-  }
-  button:hover {
-    background-color: #003366;
-    animation-name: background-color;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-  }
+      button {
+        border-radius: 5px;
+        color: white;
+        background-color: #0f5897;
+        padding: 5px 10px 8px 10px;
+      }
+      button:hover {
+        background-color: #003366;
+        animation-name: background-color;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+      }
 
-  @keyframes background-color {
-    100% {
-      background-color: #4791d0;
-    }
-  }
+      @keyframes background-color {
+        100% {
+          background-color: #4791d0;
+        }
+      }
 
-  img {
-    width: 30px;
-  }
-  img:hover {
-    animation-name: width;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-  }
+      img {
+        width: 30px;
+      }
+      img:hover {
+        animation-name: width;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+      }
 
-  @keyframes width {
-    0% {
-      width: 30px;
-    }
-    100% {
-      width: 40px;
-    }
-  }
-</style>
+      @keyframes width {
+        0% {
+          width: 30px;
+        }
+        100% {
+          width: 40px;
+        }
+      }
+    </style>
 
-<script>
-  const rect = document.getElementById('rect')
-  setInterval(() => {
-    rect.classList.toggle('move')
-  }, 4000)
-</script>
-
-<div id="rect"></div>
-<div id="anim"></div>
-<button>Register</button>
-<p>
-  <img
-    src="https://cdn.freecodecamp.org/curriculum/applied-visual-design/google-logo.png"
-    alt="Google's Logo"
-  />
-</p>
-
+    <script>
+      const rect = document.getElementById('rect')
+      setInterval(() => {
+        rect.classList.toggle('move')
+      }, 4000)
+    </script>
+  </head>
+  <body>
+    <div id="rect"></div>
+    <div id="anim"></div>
+    <button>Register</button>
+    <p>
+      <img
+        src="https://cdn.freecodecamp.org/curriculum/applied-visual-design/google-logo.png"
+        alt="Google's Logo"
+      />
+    </p>
+  </body>
+</html>
