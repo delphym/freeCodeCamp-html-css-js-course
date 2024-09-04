@@ -22,11 +22,19 @@
   }
 
   #rect {
+    transition: transform 4s linear;
+    animation: color-change 4s linear infinite;
+  }
+
+  #rect.move {
+    transform: translate(25px, 25px) rotate(360deg);
+  }
+  /* #rect {
     animation-name: rainbow;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.25, 0, 0.75, 1);
-  }
+  } */
   @keyframes rainbow {
     0% {
       background-color: blue;
@@ -99,6 +107,13 @@
     }
   }
 </style>
+
+<script>
+  const rect = document.getElementById('rect')
+  setInterval(() => {
+    rect.classList.toggle('move')
+  }, 4000)
+</script>
 
 <div id="rect"></div>
 <div id="anim"></div>
