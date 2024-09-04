@@ -1,77 +1,82 @@
 <style>
-    div {
-      height: 40px;
-      width: 70%;
-      background: black;
-      margin: 50px auto;
-      border-radius: 5px;
-    }
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
 
-    #anim {
-      animation-name: colorful;
-      animation-duration: 3s;
+  #anim {
+    animation-name: colorful;
+    animation-duration: 3s;
+  }
+  @keyframes colorful {
+    0% {
+      background-color: blue;
     }
-    @keyframes colorful {
-      0% {
-        background-color: blue;
-      }
-      100% {
-        background-color: yellow;
-      }
+    100% {
+      background-color: yellow;
     }
+  }
 
-    #rect {
-      animation-name: rainbow;
-      animation-duration: 4s;
+  #rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
     }
-    @keyframes rainbow {
-      0% {
-        background-color: blue;
-      }
-      25% {
-        background-color: red;
-      }
-      50% {
-        background-color: green;
-      }
-      75% {
-        background-color: orange;
-      }
-      100% {
-        background-color: yellow;
-      }
+    25% {
+      background-color: red;
     }
+    50% {
+      background-color: green;
+    }
+    75% {
+      background-color: orange;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
 
-    button {
-      border-radius: 5px;
-      color: white;
-      background-color: #0f5897;
-      padding: 5px 10px 8px 10px;
-    }
-    button:hover {
-      background-color: #003366;
-      animation-name: background-color;
-      animation-duration: 500ms;
-    }
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0f5897;
+    padding: 5px 10px 8px 10px;
+  }
+  button:hover {
+    background-color: #003366;
+    animation-name: background-color;
+    animation-duration: 500ms;
+  }
 
-    @keyframes background-color {
-      100% { background-color: #4791d0;
+  @keyframes background-color {
+    100% {
+      background-color: #4791d0;
     }
+  }
 
+  img {
+    width: 30px;
+  }
+  img:hover {
+    animation-name: width;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
 
-    img {
+  @keyframes width {
+    0% {
       width: 30px;
     }
-  img:hover {
-      animation-name: width;
-      animation-duration: 500ms;
+    100% {
+      width: 40px;
     }
-
-    @keyframes width {
-      100% {
-        width: 40px;
-      }
-    }
+  }
 </style>
 
 <div id="rect"></div>
