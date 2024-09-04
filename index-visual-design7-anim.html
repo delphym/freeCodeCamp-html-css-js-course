@@ -24,6 +24,7 @@
   #rect {
     animation-name: rainbow;
     animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
   @keyframes rainbow {
     0% {
@@ -33,16 +34,18 @@
     }
     25% {
       background-color: red;
+      /* top: 25px; */
       left: 25px;
     }
     50% {
       background-color: green;
       top: 50px;
-      right: 25px;
+      left: 0px;
     }
     75% {
       background-color: orange;
-      left: 0px;
+      /* top: 25px; */
+      left: -25px;
     }
     100% {
       background-color: yellow;
