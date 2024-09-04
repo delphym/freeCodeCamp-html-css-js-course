@@ -1,4 +1,7 @@
 <style>
+  body {
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+  }
   header {
     background-color: hsl(180, 90%, 35%);
     color: #ffffff;
@@ -27,6 +30,51 @@
     text-decoration: none;
     color: inherit;
   }
+  #div1 {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: 50px auto;
+    background: linear-gradient(35deg, #ccffff, #ffcccc);
+    transform: scale(0.5);
+  }
+  #div1:hover {
+    transform: scale(1);
+  }
+  #div2 {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: 50 auto;
+    background: repeating-linear-gradient(
+      90deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px
+    );
+    transform: scale(0.5);
+  }
+  #div2:hover {
+    transform: scale(1);
+  }
+  #div3 {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: 50 auto;
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+    );
+    transform: scale(0.5);
+  }
+  #div3:hover {
+    transform: scale(1);
+  }
 </style>
 
 <header>
@@ -39,3 +87,15 @@
     </ul>
   </nav>
 </header>
+<div>
+  <h2>This is linear-gradient example</h2>
+  <div id="div1"></div>
+</div>
+<div>
+  <h2>This is repeating-linear-gradient</h2>
+  <div id="div2"></div>
+</div>
+<dev>
+  <h2>This is repeating-linear-gradient with hard stripes</h2>
+  <div id="div3"></div>
+</dev>
